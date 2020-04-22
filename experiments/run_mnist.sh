@@ -4,7 +4,7 @@
 # For each anomalous digit
 for m in {0..2}
 do
-    echo "Manual Seed: $m"
+    echo "Manual Seed: $m"  #打印
     for i in {0..9}
     do
         echo "Running MNIST, Abnormal Digit: $i"

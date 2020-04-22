@@ -16,9 +16,9 @@ This repository contains PyTorch implementation of the following paper: GANomaly
     
 
 ## 2. Installation
-1. First clone the repository
+1. First clone the repository in colab
    ```
-   git clone https://github.com/samet-akcay/ganomaly.git
+   !git clone https://github.com/samet-akcay/ganomaly.git
    ```
 2. Create the virtual environment via conda
     ```
@@ -28,9 +28,9 @@ This repository contains PyTorch implementation of the following paper: GANomaly
     ```
     conda activate ganomaly
     ```
-3. Install the dependencies.
+3. Install the dependencies(in colab)
    ```
-   pip install --user --requirement requirements.txt
+   ! pip install --user --requirement requirements.txt
    ```
 
 ## 3. Experiment
@@ -38,7 +38,8 @@ To replicate the results in the paper for MNIST and CIFAR10  datasets, run the f
 
 ``` shell
 # MNIST
-sh experiments/run_mnist.sh
+!chmod u+x ganomaly/experiments/run_mnist.sh
+! experiments/run_mnist.sh
 
 # CIFAR
 sh experiments/run_cifar.sh # CIFAR10
